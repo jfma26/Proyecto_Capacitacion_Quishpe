@@ -33,17 +33,17 @@ public class RegistroParticipantes extends javax.swing.JFrame {
         ResultSet resultado = cont.SelectDB1(sentencia);
         int codigo = 0;
         while (resultado.next()) {
-            jComboBox1.addItem(resultado.getString("Pregunta"));
+      //      jComboBox1.addItem(resultado.getString("Pregunta"));
             codigo++;
         }
     }
 
-    private boolean CamposLlenos(){
+    /*private boolean CamposLlenos(){
         if(!jTextField1.getText().equals("") && !jTextField2.getText().equals("") && !jTextField3.getText().equals("") 
                 && !jPasswordField1.getPassword().equals("") && !jPasswordField1.getPassword().equals(""))
             return true;
         return false;
-    }
+    }*/
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -398,7 +398,7 @@ public class RegistroParticipantes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(CamposLlenos()){
+/*        if(CamposLlenos()){
             if(jPasswordField1.getText().equals(jPasswordField2.getText())){
             Validacion validar = new Validacion();
             if(validar.valida(jTextField1.getText())){
@@ -415,7 +415,7 @@ public class RegistroParticipantes extends javax.swing.JFrame {
             }else
                 JOptionPane.showMessageDialog(null, "Contraseña Incorrectas");
         }else
-            JOptionPane.showMessageDialog(null, "Llenar todos los campos");
+            JOptionPane.showMessageDialog(null, "Llenar todos los campos");*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
